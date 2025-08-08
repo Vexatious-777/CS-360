@@ -4,6 +4,11 @@
 A Kotlin-based Android application for efficient inventory management with real-time SMS alerts for low-stock items.  
 Developed as part of the CS-360 Mobile Architect & Programming course to demonstrate mobile app architecture, database integration, and user interface design.
 
+
+---
+# Video Example
+https://github.com/user-attachments/assets/d8dcf6ec-dd56-44da-b721-1bde3f02dc84
+
 ---
 
 ## 📌 Features
