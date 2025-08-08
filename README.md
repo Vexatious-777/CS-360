@@ -1,21 +1,77 @@
 # CS-360
+# Android Inventory Tracking App
 
-The requirements and goals of the application I developed was to assist someone with keeping track of an inventory of items.
-This was to be done in a grid-based user interface, that also used a user log-in page and SMS support to alert the user when their
-stock was getting low.
+A Kotlin-based Android application for efficient inventory management with real-time SMS alerts for low-stock items.  
+Developed as part of the CS-360 Mobile Architect & Programming course to demonstrate mobile app architecture, database integration, and user interface design.
 
-The screens and features that were necessary to support user needs to me seemed to be a recycler view for the inventory to enable it to stay one page that would
-be scrollabe for all items. Connection to SQLite that way user accounts and the items within the app would stay consistent and accurate after app shutdown.
-My UI was user centered by being intuitive and simple that way a user just by interacting with the app should have no problems using it and I believe they were succesful.
+---
 
-I approached the process of coding my app by taking it step-by-step through incremental builds and then testing each piece to ensure they worked as intended. A strategy I plan
-on continuing to implement.
+## 📌 Features
 
-I did test to ensure my code was functional by running it through the Android studio emulator. This process is important not only to make sure that the code works but to also
-see what experience I am providing to the end user and how I might be able to improve the application in the future.
+- **User Authentication** – Secure login screen to ensure only authorized users can access the inventory.
+- **Inventory Grid View** – Displays items in a clean, organized grid layout using RecyclerView.
+- **Low-Stock SMS Alerts** – Automatically sends SMS notifications when inventory falls below predefined thresholds.
+- **SQLite Database Integration** – Stores and retrieves inventory data locally for offline use.
+- **Incremental Development Approach** – Built and tested in stages to ensure stability and maintainability.
 
-I had to innovate at one point during the entire process, when I had to implement SQLite to ensure that the application would correctly save data. Prior to this it would only
-hold the data during runtime. This required rewriting of good portions of the inventory systems logic.
+---
 
-I believe the specific component that I was particularly succesful in demonstrating my abilites would have to be the implementation of SQLite.
+## 🛠 Tech Stack
 
+- **Language & IDE**: Kotlin, Android Studio
+- **Database**: SQLite
+- **UI Components**: RecyclerView, ConstraintLayout
+- **Notifications**: SMS integration
+- **Version Control**: Git & GitHub
+
+---
+
+## 📂 Project Structure
+
+app/
+├── java/
+│ ├── com.example.inventoryapp
+│ │ ├── ui/ # Activities & Fragments
+│ │ ├── data/ # Database helper classes
+│ │ ├── models/ # Data models
+│ │ └── utils/ # Utility functions
+└── res/ # Layouts, drawables, values
+
+---
+
+## 🚀 Setup & Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Vexatious-777/CS-360.git
+   
+2. Open in Android Studio
+3. Build & run the app
+4. (Optional) Configure SMS settings in the app to enable low-stock alerts
+5. 
+---
+Development Process
+Stage 1 – Designed UI wireframes and database schema
+
+Stage 2 – Implemented authentication and basic inventory display
+
+Stage 3 – Added SQLite persistence and CRUD functionality
+
+Stage 4 – Integrated SMS notifications for low-stock alerts
+
+Stage 5 – Performed unit and manual testing on Android Emulator
+
+---
+Learning Outcomes
+
+Applied mobile software architecture concepts to a full-stack Android app
+
+Gained experience in SQLite database management and UI/UX optimization
+
+Learned to integrate device features (SMS) into native applications
+
+Practiced incremental development and iterative testing
+---
+License
+This project is for educational purposes as part of SNHU coursework.
+All code is open-source for learning and demonstration.
