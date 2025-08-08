@@ -1,0 +1,56 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+}
+
+android {
+    namespace = "com.example.projecttwocs360" // Use '=' for assignment in Kotlin DSL
+    compileSdk = 34                           // Use '='
+
+    defaultConfig {
+        applicationId = "com.example.projecttwocs360"
+        minSdk = 34
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = false // Use 'isMinifyEnabled' in Kotlin DSL
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+
+    // Unit Testing Dependencies
+    testImplementation(libs.junit) // Assuming 'libs.junit' points to 'junit:junit:...'
+
+    // Add these lines for Mockito:
+    testImplementation("org.mockito:mockito-core:5.11.0")    // Replace with the latest version
+    testImplementation("org.mockito:mockito-inline:5.2.0")  // Replace with the latest version
+    // If you have defined these in your libs.versions.toml, use the alias:
+    // testImplementation(libs.mockito.core)
+    // testImplementation(libs.mockito.inline)
+
+
+    // Instrumented Testing Dependencies
+    androidTestImplementation(libs.androidx.junit) // Assuming 'libs.androidx.junit' points to 'androidx.test.ext:junit:...'
+    androidTestImplementation(libs.androidx.espresso.core)
+}

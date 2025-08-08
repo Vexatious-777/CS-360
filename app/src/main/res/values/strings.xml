@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProjectTwoCS360</string>
+    <string name="log_in">Log In</string>
+    <string name="new_user">New User?</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="add_item">add item</string>
+    <string name="addItem">add_item</string>
+    <string name="delete_item">delete_item</string>
+    <string name="inventory">Inventory</string>
+    <string name="items">Items</string>
+</resources>
