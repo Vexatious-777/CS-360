@@ -26,19 +26,6 @@ Developed as part of the CS-360 Mobile Architect & Programming course to demonst
 
 ---
 
-## 📂 Project Structure
-
-app/
-├── java/
-│ ├── com.example.inventoryapp
-│ │ ├── ui/ # Activities & Fragments
-│ │ ├── data/ # Database helper classes
-│ │ ├── models/ # Data models
-│ │ └── utils/ # Utility functions
-└── res/ # Layouts, drawables, values
-
----
-
 ## 🚀 Setup & Installation
 
 1. **Clone the repository**
