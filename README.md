@@ -54,7 +54,7 @@ Stage 4 – Integrated SMS notifications for low-stock alerts
 Stage 5 – Performed unit and manual testing on Android Emulator
 
 ---
-Learning Outcomes
+## Learning Outcomes
 
 Applied mobile software architecture concepts to a full-stack Android app
 
